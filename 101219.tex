@@ -1,3 +1,89 @@
+\subsubsection{Schwarze Löcher im Zentrum von Galaxien}
+\begin{itemize}
+	\item Was ist ein schwarzes Loch?
+		\begin{itemize}
+			\item[Laplaxe (1795)] Fluchtgeschwindigkeit eines Objektes von der Oberfläche eines Himmelskörpers der Masse $M$ und Radius $R$:
+				\begin{equation*}
+					v_\text{Flucht}=\sqrt{\frac{2GM}{R}}
+				\end{equation*}
+				Bei genügend kleinem Radius $v_{Flucht}=c=$ Lichtgeschwindigkeit
+		\end{itemize}
+	\item Schwarzschildradius: $R=\frac{2GM}{c^2}\leadsto 3\cdot 10^4\left(\frac{M}{M_\odot}\right)\si{\cm}$\\
+		z.B. für Sonne: $3\cdot 10^5\si{cm} (\SI{3}{\km})$\\
+		Definition: Ein Schwarzes Loch hat einen Radius von $R<R_{BH}$
+		\begin{itemize}
+			\item[] Nachweis schwarzer Löcher?
+			\item[] indirekt über Detektion kompakter Massenkontraktion
+		\end{itemize}
+		$M_0$ mit Geschwindigkeitsdispersion $\sigma$\\
+		Charakteristische Rotationsgeschwindigkeit im Abstand $R$:
+		\begin{equation*}
+			V\sim\sqrt{\frac{G\cdot M_0}{R}} \text{ für Abstände } R\leq R_{BH}:=\frac{GM}{\sigma^2}\sim\num{0.4}\left(\frac{M_0}{10^6M_\odot}\right)\left(\frac{\sigma}{\SI{100}{\frac{\km}{\s}}}\right)^{-2}\si{\ps}
+		\end{equation*}
+		wird der Einfluss des SMBH auf die Kinematic der Systeme bemerkbar
+		\begin{itemize}
+			\item zugehöriger Winkel $=\theta_{BH}=\frac{R_{BH}}{D}\sim 0.1\left(\frac{M_0}{10^6M_\odot}\right)\left(\frac{\sigma}{\SI{100}{\frac{\km}{\s}}}\right)^{-2}\left(\frac{D}{\si{M\ps}}\right)^{-1}$
+			\item $\sigma$ steigt an wie $\sqrt{R}$ für $R\leq R_{BH}$
+		\end{itemize}
+		Empirisch findet man:
+		\begin{equation*}
+			M=\num{1.2e8}M_\odot\left(\frac{\sigma}{\SI{200}{\frac{\km}{\s}}}\right)^{\num{3.75}}
+		\end{equation*}
+		kann für relativ nahe Galaxien detektiert werden
+\end{itemize}
+\subsection{Extragalaktische Entfernungsbestimmungen}
+\begin{itemize}
+	\item $\exists$ Methoden für verschiedene Längenskalen
+	\item 1. Schritt: Bestimmung der Entfernung zur großen Magellanschen Wolke (LMC)
+	\item Supernova SN1987A $\Rightarrow $ beleuchtet einen elliptischen Ring\\
+		Ring der aus Material stammt, das vom Vorläuferstern der SN herausgeschleudert wurde\\
+		Elliptizität aufgrund geometrische Projektion (intrinsisch Kreisförmig)\\
+		Aufleuchten des Rings nicht gleichförmig, da uns das Licht von dem Teil des Rings, der näher ans uns ist, früher erreicht $\Rightarrow \frac{\text{Licht auf Verzögerung}}{\text{Licht an Verzögerung}} \& $ Inklinationswinkel des Rings $\Rightarrow $ Durchmesser des Rings $\Rightarrow$ Abstand $D_{LMC}=\SI{51.8}{k\ps}\pm\SI{6}{\%}$\\
+		Aktuell (2019) $\num{49.59}\pm\num{0.09} (tot)\pm\num{0.54}(system)\si{k\ps}(\pm\SI{0.8}{\%})$
+	\item Eichung der Perioden-Leuchtkraft-Relation der Cepheiden (\num{28.6}) mit Hilfe der LMC, zur Entfernungsmessung weiter entfernter Galaxien
+	\item sekundäre Entfernungsindikatoren (Entfernungsindikatoren Entfernungsverhältnis z.B. über Skalengesetz Tully-Fischer, Farber-Jackson)
+\end{itemize}
+\section{Homogene Iostrope Weltmodelle}
+\begin{itemize}
+	\item \textbf{Ziel}: Verständnis des Universums auf großen Skalen
+	\item Schwierigkeiten:
+		\begin{itemize}[label={$\cdot$}]
+			\item $\exists$ nur ein Universum
+			\item große Entfernung $\Rightarrow$ lichtschwache Quellen
+			\item[$\Rightarrow$] Erkenntnisgewinn durch Entwicklung großer Teleskope ($\diameter>\SI{8}{\m}$) 
+		\end{itemize}
+	\item \textbf{wichtigster Aspekt} für Beobachtungen: endliche Lichtgeschwindigkeit $\Rightarrow$ Beobachtungen von entfernten Objekten erlauben in die Vergangenheit zu schauen!
+\end{itemize}
+\subsection{Grundlegende Beobachtungen auf kosmologischen Skalen}
+\begin{enumerate}[label={$(\Roman*)$}]
+	\item Nachts ist es dunkel (Olders Paradoxon)
+	\item Lichtschwache (weiter entfernte) Galaxien sind am Himmel Gleichförmig verteilt
+	\item Spektrallinien in Spektren von Galaxien zeigen eine systematischen Verschiebung
+		\begin{equation*}
+			z:=\frac{\lambda_B-\lambda_0}{\lambda_0}\quad \lambda :=\text{ Wellenlänge der Spektrallinie im Ruhesystem (Laborsystem)}
+		\end{equation*}
+		$\lambda_B:=$ von Beobachtern gemessene Wellenlänge\\
+		$\Rightarrow \lambda_B=(1+z)\lambda_0$ i.d. $z>0\rightarrow $ Rotverschiebung (Ausnahme: Gleichgewicht nahe Galaxien, M31) f+r kleinere $z$ gilt für die Relativgeschwindigkeit $v\approx z\cdot c$\\
+		Hubble-Gesetz: $v=\underset{\underset{\text{Hubble-Konstante}}{\uparrow}}{H_0}\cdot D$ zur Galaxie\\
+		$\Rightarrow D\approx 1000\cdot z h^{-1}\si{M\ps}$ (falls $z<<1$)
+	\item In fast allen Kosmischen Objekten beträgt der Massenanteil von Helium etwa $\num{25}-\SI{30}{\%}$
+	\item Die ältesten Sternhaufen in unserer Galaxis haben ein Alter von $\sim\SI{12e9}{a}$
+		\begin{itemize}
+			\item mit Hilfe des Hertzsprung-Russel-Diagramms
+				\begin{figure}[H]
+					\begin{tikzpicture}
+						\def\k{2}
+						\draw[<->] (0,4)node[above left]{$v$}--(0,0)--(6,0)node[below right]{$B-V$};
+						\draw[domain=-{sqrt(4/\k)}:{sqrt(4/\k)},samples=50,densely dashed] plot({\k*(\x)^2+1.5},{\x+1.5});
+					\end{tikzpicture}
+				\end{figure}
+				Sterne der Masse, für die das Lebensalter der Hauptreihe gleich dem Alter des Sternhaufens ist $\to$ Alter des Sternhaufens durch Vergleich mit theoretischem Modell der Sternentwicklung
+		\end{itemize}
+	\item $\exists$ eine Mikrowellenstrahlung (kosmischen Mikrowellenhintergrundstrahlung, imB) isolation bis auf fluktuation der relativen Stärke $\sim 10^{-5}$
+	\item Spektrum dieser Hintergrundstrahlung entspricht einer perfekten Schwarzkörperstrahlung mit Temperatur $T=\num{2.728}\pm\SI{0.004}{\K}$
+	\item Die Anzahl dicht von Radioquellen mit Fluss folgt mit den einfachen Gesetzen $N(>s)\propto s^{-\frac{3}{2}}$ (Beobachtet bei hoher galaktischen Breite) um Quellen der Milchstraße auszuschließen
+\end{enumerate}
+\textbf{\underline{Ziel}}: Entwicklung eines kosmologischen Modells, das diese Beobachtungen erklärt
 \subsection{Ist das Universum unendlich, euklidisch und statisch?}
 \begin{itemize}
 	\item Naive Annahme eines
