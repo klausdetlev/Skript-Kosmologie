@@ -1,0 +1,123 @@
+\subsection{Thermische Geschichte des Universums}
+\begin{itemize}
+	\item wegen $T\propto 1+z$ war das Universum früher heißer:
+		\begin{align*}
+			z&=\num{0} \text{ (heute)} & T&\approx\SI{2.7}{\K}\\
+			z&=\num{1100} & T&=\SI{3000}{\K}\\
+			z&=10^9 & T&\sim\SI{3e9}{\K} \text{ heißer als das innere von Sternen}
+		\end{align*}
+		\begin{itemize}
+			\item energetische Prozesse wie z.B. Kernfusion im frühen Universum\vspace{1mm}\\
+				\textbf{\underline{\smash{Ziel}}}: Extrapolation der physikalischen Gesetze für das frühe Universum, um dieses zu beschreiben (Annahme Naturgesetze haben sich zeitlich nicht geändert)
+		\end{itemize}
+	\item Vorbemerkungen:
+		\begin{itemize}[label={\textbullet}]
+			\item $\SI{1}{\eV}\approx\SI{1.1905e4}{k_B\K}$
+			\item Anzahldichte und Energieverteilung von Teilchen im thermodynamischen und chemischen Gleichgewicht hängt allein von ihrer Temperatur ab
+			\item Die Elementarteilchenphysik ist für Energien $\lesssim\SI{1}{G\eV}$ sehr gut verstanden und wird durch die Quantenmechanik beschrieben
+			\item Notwendige Bedingung zum Erreichen eines chemischen Gleichgewichts ist die Möglichkeit der Paarerzeugung- und vernichtung, z.B. $2\gamma\mapsto e^++e^-$
+		\end{itemize}
+\end{itemize}
+\subsubsection{Expansion in strahlungsdominierter Phase}
+\begin{itemize}
+	\item Für $z>>z_\text{eq}=a^{-1}_\text{eq}-1\approx\SI{23900}{\Omega_mh^2}$ ist die Energiedichte der Strahlung $\rho_r\sim T^4\Leftrightarrow \rho\sim a^{-4}$ dominant.
+	\item $(F1)$ wird zu:
+		\begin{equation*}
+			\left(\frac{\dot{a}}{a}\right)^2=\frac{8\pi G}{3}\cdot\text{const}\cdot a^{-4} + \text{ vernachlässigbare Terme}
+		\end{equation*}
+	\item Lösung durch Ansatz $a(t)\sim t^\beta \Rightarrow t^{-2}\sim t^{-4\beta} \Rightarrow \beta=\frac{1}{2}$
+		\begin{equation*}
+			\Rightarrow a(t)\sim t^\frac{1}{2}, t\sim T^{-2}, t\sim\rho^{-\frac{1}{2}}
+		\end{equation*}
+		wobei die Proportionalitätskonstante von der Anzahl der relativistischen Teilchen abhängt
+	\item Unter der Annahme des thermodynamischen Gleichgewichts (Hypothese!) ist diese Anzahl bekannt $\Rightarrow$ Verlauf der frühen Expansion komplett bekannt
+\end{itemize}
+\subsubsection{Entkopplung der Neutrinos}
+\begin{itemize}
+	\item Beginn der Betrachtung bei $T=10^{12}\si{\K}\hat{=}\SI{100}{M\eV}$\\
+		Proton, $m_p\approx\SI{938.3}{\frac{M\eV}{c^2}}$\\
+		Neutron, $m_n\approx\SI{936.6}{\frac{M\eV}{c^2}}$\\
+		Elektron, $m_e\approx\SI{0.511}{\frac{M\eV}{c^2}}$\\
+		Myon, $m_\mu\approx\SI{140}{\frac{M\eV}{c^2}}$
+	\item Protonen und Neutronen (Baryonen) sind zu schwer um bei der betrachteten Temperatur erzeugt zu werden, sie müssen vorher erzeugt worden sein
+	\item \textbf{Alle} Baryonen, die es heute gibt, müssen damals schon vorhanden gewesen sein
+	\item Auch Paare von Myonen können nicht mehr effizient in der Reaktion $\gamma +\gamma \mapsto \mu^++\mu^-$ erzeugt werden\\
+		($\mu^\pm$ sind instabil mit $\tau\sim\SI{2}{\mu\s}$)
+		\begin{itemize}
+			\item relativistische Teilchensorte, die zur Strahlungsdichte beitragen:
+				\begin{itemize}[label={$\cdot$}]
+					\item Elektronen/Positronen $e^-/e^+$
+					\item Photonen $\gamma$
+					\item Neutrinos/Antineutrinos $\nu/\bar{\nu}$ mit $m_\nu<\SI{1}{\eV}\approx 0$ (Grenze aus der Kosmologie)
+				\end{itemize}
+			\item nichtrelativistische Teilchen, die zu $\rho_m$ beitragen:
+				\begin{itemize}[label={$\cdot$}]
+					\item Protonen/Neutronen $p/n$
+					\item Konstituenten der dunklen Materie WIMPs (?) mit Masse $\gtrsim\SI{100}{G\eV}$
+				\end{itemize}
+		\end{itemize}
+	\item Die Reaktionen:
+		\begin{align*}
+			e^\pm+\gamma&\leftrightarrow e^\pm+\gamma & &\text{Comptonstreuung}\\
+			e^++e^-&\leftrightarrow \gamma+\gamma & &\text{Paarerzeugung und Annihilation}\\
+			\nu+\bar{\nu}&\leftrightarrow e^++e^- & &\text{Neutrino-Antineutrinostreuung}\\
+			\nu+e^\pm&\leftrightarrow\nu+e^\pm & &\text{Neutrino-Elektro-Streuung}
+		\end{align*}
+		halten die relativistischen Teilchen im Gleichgewicht.
+	\item Energiedichte zu dieser Zeit:
+		\begin{equation*}
+			\rho=\rho_r=\num{10.75}\frac{\pi^2}{30}\cdot\frac{\left(k_BT\right)^4}{\hbar\cdot c^3} \Rightarrow t=\SI{0.3}{\s}\cdot\left(\frac{T}{\SI{1}{M\eV}}\right)^{-2}
+		\end{equation*}
+	\item Damit die Teilchen im Gleichgewicht bleiben, müssen die obigen Reaktionen genügend häufig ablaufen, d.h. die mittlere Zeit zwischen zwei Reaktionen muss sehr viel kürzer sein als die Zeitskala, auf der sich die Gleichgewichtsbedingungen aufrund der Expansion ändern (Reaktionsraten müssen größer als $H(t)$ sein)
+	\item insbesondere Neutrinos interagieren nur per schwacher Wechselwirkung
+	\item Reaktionsrate: $\Gamma\sim n\sigma$\\
+		Anzahldichte: $n\sim a^{-3}\sim t^{-\frac{3}{2}}$\\
+		Wirkungsquerschnitt für Neutrinos: $\sigma\sim E^2\sim T^2\sim a^{-2}$
+		\begin{itemize}
+			\item $\Gamma\sim n\sigma\sim a^{-3}\cdot a^{-2}=a^{-5}\sim t^{-\frac{5}{2}}\sim T^5$
+		\end{itemize}
+	\item Zu Vergleichen mit Expansionsrate $\frac{\dot{a}}{a}=H(t)\sim t^{-1}\sim T^2$
+	\item Aus $\sigma$ der schwachen Wechselwirkung kann man den Zeitpunkt bzw. die Temperatur des Übergangs berechnen:
+		\begin{equation*}
+			\frac{\Gamma}{H}\sim\left(\frac{T^3}{\SI{1.6e10}{\K}}\right)
+		\end{equation*}
+		\begin{itemize}
+			\item Für $T\lesssim 10^{10} \si{\K}$ sind die Neutrinos nicht mehr mit den anderen Teilchen im Gleichgewicht. Nach diesem zeitpunkt ($t=\SI{1}{\s}$) bewegen sie sich ohne weitere Wechselwirkung bis zum heutigen Tage.\\
+				heute: $n_\nu=\SI{113}{\cm^{-3}}$ für jede Neutrinoart
+				\begin{equation*}
+					T_\nu=\SI{1.9}{\K} \quad (\text{s.u.})
+				\end{equation*}
+				\begin{itemize}
+					\item[$\leadsto$] leider sehr schwach nachweisbar
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+\subsubsection{Paarvernichtung}
+\begin{itemize}
+	\item Für $T\lesssim\SI{5e9}{\K}$ bzw. $k_BT\lesssim \SI{500}{k\eV}$ dominert die Annihilation $e^++e^-\to 2\gamma$ über die Paarerzeugung.
+		\begin{itemize}
+			\item Dichte der $e^+e^--Paare$ nimmer sehr schnell ab
+			\item Photonengas wird erhitzt (Neutrinos nicht, da sie bereits entkoppelt sind)
+				\begin{equation*}
+					T_\gamma=\left(\frac{11}{4}\right)^\frac{1}{3}\cdot \underset{\underset{\text{vor Annihilation}}{\uparrow}}{T}=\left(\frac{11}{4}\right)^\frac{1}{3}\underset{\underset{\underset{\text{entkoppelten Neutrinos}}{\text{Temperatur der}}}{\uparrow}}{T_\nu}\to \text{ siehe Übung}
+				\end{equation*}
+		\end{itemize}
+	\item Nach der Annihilation gilt das Expansionsgesetz $t=\SI{0.55}{\s}\left(\frac{T}{\SI{1}{M\eV}}\right)^{-2}$ und das Verhältnis von Baryonendichte und Photonendichte bleibt Konstant: $\eta:=\left(\frac{n_b}{n_\gamma}\right)=\SI{2.74e-8}{\underset{=\num{0.02}}{\Omega_bh^2}}$
+	\item Nach der Annihilation sind \textbf{fast} alle Elektronen zerstrahlt, aber eine kleine Zahl $n_e=n_p$ muss übrig bleiben, damit das Universum elektrisch neutral bleibt $\Rightarrow \frac{n_{e^-}}{n_\gamma}=\num{0.8}\eta$ ($\eta$ beinhaltet Protonen und Neutronen)
+\end{itemize}
+\subsubsection{Primordiale Nukleosynthese}
+\begin{itemize}
+	\item Entstehung von Atomkernen aus $p$ und $n$ im frühen Universum
+	\item wichtigste Reaktionen im chemischen Gleichgewicht:
+		\begin{equation*}
+			p+e^-\leftrightarrow n+\nu_e,\quad p+\bar{\nu}_e\leftrightarrow n+e^+,\quad n\to p+e^-+\bar{\nu}_e
+		\end{equation*}
+		Zerfallszeit des freien Neutrons: $\tau_n=\SI{887}{\s}$
+	\item im thermischen Gleichgewicht: $\frac{n_n}{n_p}=\left(\frac{m_n}{m_p}\right)^\frac{3}{2}\cdot e^{-\frac{\Delta m c^2}{k_BT}}\qquad (\ast)$\\
+		mit $\Delta m=m_n-m_p=\SI{1.293}{\frac{M\eV}{c^2}}$
+	\item Gleichgewichts-Reaktionen werden selten, nachdem die Neutrinos ausgefroren sind. Dies geschieht bei $T\approx\SI{0.8}{M\eV}$
+		\begin{itemize}
+			\item $\frac{n_n}{n_p}\approx e^{-\frac{\SI{1.3}{M\eV}}{\SI{0.8}{M\eV}}}\approx \num{0.2}$
+		\end{itemize}
+	\item Nach der Entkopplung von $n$ und $p$ wird ihr Verhältnis nicht mehr durch $(\ast)$ beschrieben, sondern nur noch durch den Zerfall der freien Neutronen auf der Zeitskala $\tau_n$ modifiziert $\Rightarrow $ heutige Neutronen wurden schnell in Atomkerne gebunden
+\end{itemize}
