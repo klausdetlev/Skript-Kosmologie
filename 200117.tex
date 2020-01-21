@@ -5,7 +5,7 @@
 	\end{tikzpicture}
 \end{figure}
 \begin{enumerate}[label={$(\arabic*)$}]
-	\item Deuteriumbildung $\text{D}=^2\text{H}$
+	\item Deuteriumbildung $\text{D}=\text{\textsuperscript{2}H}$
 		\begin{equation*}
 			p+n\to D+\gamma \text{ mit Bindungsenergie $E_b=\SI{2.225}{M\eV}$}
 		\end{equation*}
@@ -99,7 +99,7 @@
 	\item Nach ca. $\SI{3}{\min}$ ist die primordiale Nukleosynthese abgeschlossen $T\sim\SI{8e8}{\K}$
 	\item Bei $z\approx z_{eq}\approx\SI{23900}{\Omega_mh^2}$ beginnt die Materie (d.h. der Staub) zu dominieren. Dhaer wird (F1) zu:
 		\begin{equation*}
-			H^2(t)\approx H_0^2\frac{Omega_m}{a^3}
+			H^2(t)\approx H_0^2\frac{\Omega_m}{a^3}
 		\end{equation*}
 	\item Ansatz $a(t)\sim t^\beta$ ergibt $\beta=\frac{2}{3}$ und damit:
 		\begin{equation*}
@@ -108,4 +108,34 @@
 		für $a_{eq}<<a<<1$
 	\item nächste wichtige Schwelle: $T\sim\SI{3000}{\K} (\hat{=} t\sim\SI{3e5}{a})$\\
 		Rekombination $p+e^-\to$ neutraler Wasserstoff
+	\item Aber: Rekombination Konkurriert mit der Ionisation neutraler Atome durch energetische Photonen
+	\item Rekombination findet über einen Zwei-Photonen-Zerfall statt $\Rightarrow$ diese Photonen sind nicht energetisch genug, um ein Atom vom Grundzustand anzuregen
+	\item Reaktionsrate des $2\gamma$-Zerfalls $=10^{-8}$. Reaktionsrate des direkten Ly$\alpha$-Übergangs
+		\begin{itemize}
+			\item Rekombination findet erst spät statt (bei $T\approx\SI{3000}{\K}$)\\
+				$(E_\text{ion}(\text{H})=\SI{13.6}{\eV}\hat{=}T=\SI{1.6e5}{\K})$
+		\end{itemize}
+	\item Ionisationsgrad:
+		\begin{align*}
+			x&=\frac{\text{Anzahldichte der freien } e^-}{\text{Anzahldichte der insgesamt vorhandenen Protonen}}\\
+			&=\num{2.4e-3}\cdot\sqrt{\frac{\Omega_mh^2}{\Omega_bh^2}}\cdot\left(\frac{z}{1000}\right)^{\num{12.75}}
+		\end{align*}
+		zwischen $\num{800}\leq z \leq \num{1200}$\\
+		$x$ ändert sich sehr schnell in Abhängigkeit von $z$ (von $x=1$ zu $x\sim 10^{-4}$)
+	\item $x\sim 10^{-4}$ bleibt übrig aufgrund der Expansion (Dichte des Universums wird zu klein)
+	\item Das Universum wird \textbf{transparent} für Photonen der Energie
+		\begin{equation*}
+			E_\gamma\leq\SI{13.6}{\eV}\quad(\text{bzw. }\lambda\geq\SI{121.6}{n\m})
+		\end{equation*}
+	\item optische Tiefe für die Thomson-Streuung
+		\begin{equation*}
+			\tau(z)=\num{0.37}\cdot\left(\frac{z}{1000}\right)^{\num{14.25}}
+		\end{equation*}
+		\begin{itemize}
+			\item Photonen mit $z\leq 1000$ breiten sich bis heute aus ohne wesentlich mit Materie zu wechselwirken (Dicke des Übergangs $\Delta z\approx\num{60}$)
+			\item Mit Hilfe von Photonen können wir das Universum nur bis $z\lesssim 1000$
+			\item Kosmsicher Mikrowellenhintergrund, der isotrop ist (siehe Beobachtung VI und VII, Abschnitt 4.1)
+		\end{itemize}
+	\item Zwischen $z\sim 1000$ und $z\sim 6$ muss eine Reionisation des intergalaktischen Mediums stattgefunden haben, sonst würden wir keine UV-Photonen von Quellen mit hohem $z$ erhalten (sonst hätte man Absorption durch Photoionisation von neutralem Wasserstoff)
+	\item Reionisation passierte (vermutlich) bei $z\sim 17$ durch eine erste Generation von Sternen
 \end{itemize}

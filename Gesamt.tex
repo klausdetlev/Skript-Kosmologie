@@ -4,7 +4,7 @@
 \usepackage[T1]{fontenc}
 \usepackage[ngerman]{babel}
 
-\usepackage{amsmath,amssymb,siunitx,lmodern,enumitem,wrapfig,wasysym}
+\usepackage{amsmath,amssymb,siunitx,lmodern,enumitem,wrapfig,wasysym,setspace}
 %\usepackage{microtype}
 \usepackage{multicol}
 \usepackage{tikz}
@@ -27,6 +27,12 @@
 \renewcommand{\labelitemii}{$\Rightarrow$}
 
 \newcommand{\geqleq}{\overset{>}{\underset{<}{=}}}
+\newcommand{\misotope}[2]{
+	\text{\textsuperscript{#1}#2}
+}
+\newcommand{\isotope}[2]{
+	\textsuperscript{#1}#2
+}
 \begin{document}
 \title{Einführung in die Kosmologie}
 \author{Martin Michael Müller}
@@ -69,4 +75,5 @@
 \include{200107}
 \include{200114}
 \include{200117}
+\include{200121}
 \end{document}
