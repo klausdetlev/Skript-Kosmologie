@@ -1,0 +1,189 @@
+\section{Galaxienhaufen und -gruppen}
+\begin{itemize}
+	\item Milchstraße ist Mitglied der lokalen Gruppe (local group): $\num{35}$ Galaxien (+$\sim\num{20}$ zusätzlich sehr lichtschwache (gefunden mit dem SDSS)) innerhalb $\lesssim\SI{1}{M\pc}$
+	\item wichtige Mitglieder:
+		\begin{itemize}[label={$\cdot$}]
+			\item Magellansche Wolke (LMC,SMC) sind irreguläre Galaxien
+			\item 3 Spiralgalaxien:
+				\begin{itemize}
+					\item[] Milchstraße ($\mathcal{M}_B=-\num{20}$)
+					\item[] Andromeda (M31, $\mathcal{M}_B=-\num{20}$)
+					\item[] Dreiecksgalaxie (M33, $\mathcal{M}_B=-\num{18.9}$)
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+\subsection{Massenabschätzung der lokalen Gruppe}
+\begin{itemize}
+	\item M31 im Abstand von $D=\SI{770}{k\pc}$ ist eine der wenigen Galaxie mit einer Planverschiebung $v\approx -\SI{120}{\frac{\km}{\s}}$ zwischen den Zentren
+		\begin{itemize}
+			\item Kollision auf einer Zeitskala von $\SI{6e9}{\year}$
+		\end{itemize}
+	\item Milchstraße + M31 $\hat{=}\ \SI{90}{\%}$ der Leuchtkraft der lokalen Gruppe
+		\begin{itemize}
+			\item Dynamik sollte von diesen Galaxien dominiert sein (falls Massedichte $\sim$ Lichtverteilung)
+			\item Abschätzung der Gesamtmasse der lokalen Gruppe:
+				\begin{enumerate}[label={(\roman*)}]
+					\item M31 und Milchstraße waren einander sehr nahe in der Frühzeit des Universums
+					\item daraufhin haben sie sich durch die kosmologische Expansion voneinander entfernt
+					\item \textbf{Aber}: Gravitation bremst relative Fluchtgeschwindigkeit ab, bis zum Stillstand $t=t_\text{max}$
+					\item Für $t>t_\text{max}$ bewegen sie sich aufeinander zu
+						\begin{figure}[H]
+							\centering
+							\begin{minipage}[l]{0.48\textwidth}
+								\begin{tikzpicture}[>=stealth]
+									\draw[->] (-0.5,0)--(3,0)node[below right]{$t$};
+									\draw[->] (0,-0.5)--(0,3)node[above left]{$r$};
+									\draw (0,0) parabola bend (1.25,2) (2.5,0);
+									\draw[densely dashed] (0,2)node[left]{$r_\text{max}$}--(1.25,2)--(1.25,0)node[below]{$t_\text{max}$};
+								\end{tikzpicture}
+							\end{minipage}
+							\begin{minipage}[r]{0.48\textwidth}
+								Aus der Energieerhaltung folgt:
+								\begin{equation*}
+									\frac{1}{2}v^2=\frac{GM}{r}-C
+								\end{equation*}
+								mit $M=$ Gesamtmasse Milchstraße + M31 und $C$ zu bestimmende Integrationskonstante
+							\end{minipage}
+						\end{figure}
+						Bei $t=t_\text{max}$ ist $r=r_\text{max}$ und $r=\delta\Rightarrow C=\frac{G}{M}{r_\text{max}}$
+						\begin{equation*}
+							\Rightarrow \left(\frac{dr}{dt}\right)^2=2\cdot G\cdot M\cdot\left(\frac{1}{r}-\frac{1}{r_\text{max}}\right)
+						\end{equation*}
+							$\text{da } v=\frac{dr}{dt}\ (\text{Radialgeschwindigkeit})$ $\text{und } r(0)=0$
+						\begin{equation*}
+							\Rightarrow\text{ Lösung: } t_\text{max}=\int\limits_0^{t_\text{max}} t=\int\limits_0^{r_\text{max}}\frac{dr}{\sqrt{2GM\left(\frac{1}{r}-\frac{1}{r_\text{max}}\right)}}=\frac{\pi}{2}\cdot\frac{r_\text{max}^\frac{3}{2}}{\sqrt{2GM}}
+						\end{equation*}
+						\begin{itemize}[label={\textbullet}]
+							\item DGL ist symmetrisch bzgl. $v\to -v\Rightarrow $ Kollision bei $t=2t_\text{max}$
+							\item vereinfachende Abschätzung: Relativgeschwindigkeit von heute bis zur Kollision ist Konstant, d.h:
+								\begin{equation*}
+									\frac{r(t_0)}{v(t_0)}=\frac{D}{V}=\frac{\SI{770}{k\pc}}{\SI{120}{\frac{\km}{\s}}}\Rightarrow 2t_\text{max}=\overset{\overset{\begin{minipage}{2.5cm} Alter des Universums\end{minipage}}{\downarrow}}{t_0}+\frac{D}{V}
+								\end{equation*}
+								und schließlich:
+								\begin{equation*}
+									\frac{1}{2}v^2=\frac{GM}{r}-\frac{1}{2}\left(\frac{\pi GM}{t_\text{max}}\right)^\frac{2}{3}
+								\end{equation*}
+								Mit $r=r(t_0)=D$ und $v=v(t_0)$ erhält man ($t_0\approx \SI{14}{G\year}$):
+								\begin{equation*}
+									M\approx\SI{3e12}{M_\odot}\Rightarrow \frac{M}{L}\sim 70\frac{M_\odot}{L_\odot}
+								\end{equation*}
+								\textbf{Aber}:
+								\begin{equation*}
+									\frac{M}{L}\sim\num{3}-\SI{5}{\frac{M_\odot}{L_\odot}} \text{ (vgl. Tabelle, Abschnitt)}
+								\end{equation*}
+								für S\textsubscript{b\textsubscript{c}} Spiralgalaxien
+							\item[$\Rightarrow$] \textbf{Nur etwa $\SI{5}{\%}$ der gravitativen Masse der lokalen Gruppe kann direkt beobachtet ("gesehen") werden $\Rightarrow$ weitere Hinweise auf dunkle Materie!}
+						\end{itemize}
+				\end{enumerate}
+		\end{itemize}
+\end{itemize}
+\subsection{Galaxienhaufen}
+\begin{itemize}
+	\item[] $\gtrsim \SI{50}{\text{Mitglieder}}, \gtrsim\SI{1.5}{h^{-1}M\pc}$
+	\item dynamische Zeitskala (Zeit, die deine typische Galaxie benötigt, um den Haufen einmal zu durchqueren):
+		\begin{equation*}
+			t_\text{cross}\approx\underset{\underset{\begin{minipage}{3cm} $\sigma_v=\SI{1000}{\frac{\km}{\s}}$ 1D Geschwindigkeitsdispersion\end{minipage}}{\uparrow}}{\frac{\SI{1.5}{h^{-1}M\pc}}{\sigma_v}}\approx\SI{1.5e9}{h^{-1}\year} << t_0=\SI{14}{G\year}
+		\end{equation*}
+	\item[$\Rightarrow$] gravitativ gebundenes System $\Rightarrow$ Massenabschätzung möglich, da viriales Gleichgewicht vorhanden
+	\item Virialtheorem (s. Übung 1, Aufgabe 1):
+		\begin{equation*}
+			2\bar{T}+\bar{V}=0 (\ast)
+		\end{equation*}
+		wobei $T=\frac{1}{2}\sum m_iv_i^2, V=-\frac{1}{2}\sum\limits_{i\neq j} \frac{G m_im_j}{r_{ij}}$
+	\item Gesamtmasse $M=\sum\limits_i m_i$, massengewichtete Geschwindigkeitsdispersion $\left\langle v^2\right\rangle := \frac{1}{M}\cdot\sum\limits_i m_i v_i^2$, gravitativer Radius: $r_G:=2M^2\left(\sum\limits_{i\neq j}\frac{m_im_j}{r_{ij}}\right)^{-1}$
+		\begin{align*}
+			\Rightarrow T&=\frac{M}{2}\left\langle v^2\right\rangle\\
+			\Rightarrow V&=-\frac{GM^2}{r_G}\\
+			\Rightarrow M&\overset{(\ast)}{=}\frac{r_G\cdot\left\langle v^2\right\rangle}{G}\underset{\underset{\begin{minipage}{1.5cm}\begin{align*} \left\langle v^2\right\rangle &= 3\sigma_v^2\\ r_G&=\frac{\pi}{2}R_G\\=\frac{\pi}{2}2M^2&\cdot\left(\sum\limits_{i\neq j}\frac{m_im_j}{R_{ij}}\right)^{-1}\end{align*}\end{minipage}}{\uparrow}}{\approx}\SI{1.1e15}{m_\odot\cdot\left(\frac{\sigma_v}{\SI{1000}{\frac{\km}{\s}}}\right)^2\cdot\left(\frac{R_G}{\SI{1}{M\pc}}\right)}
+		\end{align*}
+		mit $R_{ij}=$ projezierter Abstand zwischen Galaxien $i$ und $j$
+	\item[$\Rightarrow$] $M\sim 10^{15}\si{M_\odot}$ für massenreiche Galaxienhaufen und wiederum:
+		\begin{equation*}
+			\frac{M}{L}\sim \SI{300}{h\left(\frac{M_\odot}{L_\odot}\right)} \text{ Masse-Leuchtkraft-Verhältnis}
+		\end{equation*}
+		übersteigt das $\frac{M}{L}$-Verhältnis von Frühtyp-Galaxien um mindestens einen Faktor $\num{10}\Rightarrow$ missing mass problem (Fritz Zwicky, 1933, Coma-Haufen)
+	\item[] \textbf{Die in Galaxien sichtbaren Sterne machen weniger als etwa $\SI{5}{\%}$ der Gesamtmasse von Galaxienhaufen aus.}
+\end{itemize}
+\subsection{Röntgenstrahlung von Galaxienhaufen}
+\begin{itemize}
+	\item Röntgenstrahlung stammt aus einem heißen, diffus verteilgten Gas (intra-cluster Gas): Bremsstrahlung + Linien-Emission (Ly$\alpha$ etc.)
+	\item Aus dem radialen Verlauf von Dichte und Temperatur des Gases lässt sich das Massenprofil $M(r)$ bestimmen
+	\item[$\Rightarrow$] $\left[\begin{aligned} \text{Masse von Galaxienhaufen:}\\ \sim\SI{3}{\%} \text{ direkt beobachtbare Sterne in Galaxien}\\ \sim\SI{15}{\%} \text{ intergalaktisches Gas}\\ \sim\SI{80}{\%}\text{ "{}dunkle Materie"{}}\end{aligned}\right]$
+	\item Masse-zu-Leuchtkraftverhältnis $\frac{M}{L}$ als Funktion der Längenskala kosmischer Objekte:
+		\begin{figure}[H]
+			\centering
+			\begin{minipage}[l]{0.7\textwidth}
+				\begin{tikzpicture}[>=stealth]
+					\draw[->] (0,0)--(1,0)++(0,-0.1)node[below]{$\SI{1}{k\pc}$}--++(0,0.2)++(0,-0.1)--++(1,0)++(0,-0.1)--++(0,0.2)++(0,-0.1)--++(1,0)++(0,-0.1)node[below]{$\SI{100}{k\pc}$}--++(0,0.2)++(0,-0.1)--++(1,0)++(0,-0.1)--++(0,0.2)++(0,-0.1)--++(1,0)++(0,-0.1)node[below]{$\SI{10}{M\pc}$}--++(0,0.2)++(0,-0.1)--(6,0)node[below right]{Längenskala};
+					\draw[->] (0,0)--++(0,0.5)++(-0.1,0)node[left]{$\num{1}$}--++(0.2,0)++(-0.1,0)--++(0,0.5)++(-0.1,0)node[left]{$\num{10}$}--++(0.2,0)++(-0.1,0)--++(0,0.5)++(-0.1,0)node[left]{$\num{100}$}--++(0.2,0)++(-0.1,0)--++(0,0.5)++(-0.1,0)node[left]{$\num{1000}$}--++(0.2,0)++(-0.1,0)--++(0,2)node[above left]{$\frac{\frac{M}{L}}{\frac{M_\odot}{L_\odot}}$};
+					\xdef\todraw{(6,0)--++(0,0.5)}
+					\foreach \x in {0.001,0.01,0.1,1}{
+						\xdef\todraw{\todraw++(-0.1,0)--++(0.2,0)node[right]{$\num{\x}$}++(-0.1,0)--++(0,0.5)};
+					}
+					\draw[->] \todraw--++(0,1.5)node[above right]{$\Omega_m$};
+					\draw[densely dashed] (0,2)--(6,2)node[midway,above]{Universum geschlossen};
+					\draw (0.5,0.5)ellipse(0.15cm and 0.35cm)coordinate(s)(1.1,0.7)ellipse(0.15cm and 0.3cm)coordinate(h)(1.3,1)ellipse(0.4cm and 0.15cm)coordinate(p)(3,1.5)ellipse(0.5cm and 0.3cm)coordinate(G)(4.5,1.6)ellipse(0.6cm and 0.3cm)coordinate(H);
+					\node[name=se,draw,shape=circle] at ([xshift=-1cm,yshift=-2cm]s) {\begin{minipage}{1cm}Sa,Sb\\ Sc,Irr\end{minipage}};
+					\draw[->] (se) .. controls +(0.5,1) and +(0.5,-0.5) .. (s);
+					\node[right] at ([xshift=1mm, yshift=-1mm]h){Halos};
+					\node at ([yshift=4mm]p){Paare};
+					\node at ([yshift=-5mm]G){Gruppen};
+					\node at ([yshift=-5mm,xshift=1mm]H){Haufen};
+				\end{tikzpicture}
+			\end{minipage}
+			\begin{minipage}[r]{0.28\textwidth}
+				\begin{itemize}[label={$\Rightarrow$}]
+					\item $\frac{M}{L}$ von kosmischen Quellen steigt an mit $r\to\infty$, aber scheint bei $\gtrsim\SI{100}{M\pc}$ konstant zu werden
+					\item $\Omega_m\sim\num{0.2}$ aus dieser Methode (aber hohe Ungenauigkeit)
+				\end{itemize}
+			\end{minipage}
+		\end{figure}
+\end{itemize}
+\subsection{Entstehung von Inhomogenitäten}
+\subsubsection{Mögliche Ursachen}
+\begin{itemize}
+	\item auf kleinen Skalen ist das Universum inhomogen, z.B. ein massereicher Galaxiehaufen mit $\varnothing=\SI{1.5}{h^{-1}M\pc}$ enthält mehr als $\num{200}$ mal so viel Masse wie eine mittlere Kugel der gleichen Größe im Universum
+	\item \textbf{Idee}: anfängliche Dichtefluktuation
+		\begin{itemize}
+			\item Dichte wächst lokal
+			\item zusächtliches Gravitationsfeld
+			\item Kosmologische Expansion wird lokal abgebremst
+			\item Dichtekontrast wächst an
+			\item Dichte wächst lokal
+			\item $\cdots$
+			\item \textbf{gravitative Instabilitäten}!
+		\end{itemize}
+	\item \textbf{Problem}: Um die heutigen Strukturen (Galaxienhaufen, -gruppen, etc.) zu erklären, müssten die CMB-Flutkuationen von der Größenordnung $\frac{\Delta T}{T}\sim 10^{-3}$ ($\lightning$ zur Beobachtung $\frac{\Delta T}{T}\sim 10^{-5}$!)
+	\item \textbf{Mögliche Lösung}: Dunkle Materie dominiert, ihr (postuliert) größerer Dichtekontrast führt zur Strukturbildung
+		\begin{enumerate}[label={(\alph*)}]
+			\item heiße dunkle Materie = relativistische Teilchen kann ausgeschlossen werden, da $\lightning$ in den Beobachtungen (kleinere Strukturen werden durch das freie Strömen der relativistischen Teilchen ausgewaschen)
+			\item kalte dunkle Materie = nicht-relativistisch (eventuell mit einer kleinen heißen Komponente, wie z.B. kosmologische Neutrinos) $\Rightarrow$ scheint sehr gut zu funktionieren
+		\end{enumerate}
+\end{itemize}
+\subsubsection{Berechnung der Dichtefluktuationen}
+\begin{itemize}
+	\item relativer Dichtekontrast:
+		\begin{equation*}
+			\delta(\vec{r},t)=\frac{\rho(\vec{r},t)-\bar{\rho}(t)}{\bar{\rho}(t)}
+		\end{equation*}
+		mit $\bar{\rho}(t)$: mittlere komische Materiedichte zur Zeit $t$
+	\item Da $\frac{\Delta T}{T}\sim 10^{-5}$ zur Zeit der Rekombination bei $z\approx\num{1100}$ sollte $\delta << 1$ für $z\to\infty$
+	\item heute $\delta\sim 1$ (auf $\sim\SI{10}{M\pc}$) bzw. $\delta >> 1$ (auf $\sim\SI{2}{M\pc}$)
+	\item Idee (s.o.): Dort wo die Dichte größer als im Mittel ist, d.h. $\delta>0$ ist das Gravitationsfeld größer $\Rightarrow$ langsamere Expansion
+		\begin{itemize}
+			\item $\delta$ steight weiter $\Rightarrow$ Instabilitäten wachsen mit der Zeit
+		\end{itemize}
+	\item Vereinfachtes Modell für kleines $\delta$:
+		\begin{itemize}[label={$\cdot$}]
+			\item Radius der Struktur $R<<$ Hubble-Radius $R_H=\frac{c}{H_0}=\SI{3000}{h^{-1}M\pc}$
+			\item Bewegungen nicht-relativistisch
+			\item nur Staubteilchen, durch die Flüssigkeitsnäherung (Kontinuum)
+			\item[$\Rightarrow$] Newtonsche Mechanik eines Fluids der Dichte $\rho(\vec{r},t)$ mit Geschwindigkeitsfeld $\vec{v}(\vec{r},t)$
+		\end{itemize}
+	\item[$\Rightarrow$] Bewegungsgleichungen:
+		\begin{enumerate}[label={(\arabic*)}]
+			\item Kontinuitätsgleichung $\frac{\partial\rho}{\partial t}+\nabla\cdot(\rho\vec{v})=0$
+			\item Euler-Gleichung $\underset{\begin{minipage}{3cm}\begin{tiny}Zeitliche Ableitung von $\vec{v}$, die von einem mitbewegten Beobachter gemessen wird\end{tiny}\end{minipage}}{\underbrace{\frac{\partial\vec{v}}{\partial t}+(\vec{v}\cdot\vec{\nabla})\vec{v}}}=-\frac{\nabla P\tikz[remember picture]{\coordinate (Druck) at (0,0);}}{\rho}-\nabla\Phi$\\
+				mit Druck $P$ (null, denn wir betrachten Staub) und Gravitationsfeld $\Phi$
+		\end{enumerate}
+\end{itemize}
