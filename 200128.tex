@@ -178,12 +178,16 @@
 			\item Radius der Struktur $R<<$ Hubble-Radius $R_H=\frac{c}{H_0}=\SI{3000}{h^{-1}M\pc}$
 			\item Bewegungen nicht-relativistisch
 			\item nur Staubteilchen, durch die Flüssigkeitsnäherung (Kontinuum)
-			\item[$\Rightarrow$] Newtonsche Mechanik eines Fluids der Dichte $\rho(\vec{r},t)$ mit Geschwindigkeitsfeld $\vec{v}(\vec{r},t)$
+			\item[$\Rightarrow$] Newtonsche Mechanik eines Fluids der Dichte $\rho(\vec{r},t)$ mit Geschwindigkeitsfeld $\vec{v}(\vec{r},t)$ mit $\vec{r}(t)=a(t)\cdot\vec{x}$
 		\end{itemize}
 	\item[$\Rightarrow$] Bewegungsgleichungen:
 		\begin{enumerate}[label={(\arabic*)}]
 			\item Kontinuitätsgleichung $\frac{\partial\rho}{\partial t}+\nabla\cdot(\rho\vec{v})=0$
 			\item Euler-Gleichung $\underset{\begin{minipage}{3cm}\begin{tiny}Zeitliche Ableitung von $\vec{v}$, die von einem mitbewegten Beobachter gemessen wird\end{tiny}\end{minipage}}{\underbrace{\frac{\partial\vec{v}}{\partial t}+(\vec{v}\cdot\vec{\nabla})\vec{v}}}=-\frac{\nabla P\tikz[remember picture]{\coordinate (Druck) at (0,0);}}{\rho}-\nabla\Phi$\\
 				mit Druck $P$ (null, denn wir betrachten Staub) und Gravitationsfeld $\Phi$
+			\item Poisson-Gleichung
+				\begin{equation*}
+					\nabla^2\Phi =4\pi G\rho
+				\end{equation*}
 		\end{enumerate}
 \end{itemize}
